@@ -5,9 +5,6 @@ function App() {
   return (
     <div>
       <Button variant="contained">Contained</Button>
-      <Button variant="contained" color="success">
-        ddfdfd
-      </Button>
     </div>
   );
 }
