@@ -8,7 +8,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 
 const useStyles = makeStyles(theme => ({
-  offset: theme.mixins.toolbar
+  offset: theme.mixins.toolbar,
+  menuButton: {
+    marginRight: theme.spacing(2),
+  }
 }))
 
 function ContenedorNavbar() {
@@ -17,7 +20,7 @@ function ContenedorNavbar() {
     <div>
       <AppBar position="fixed" color="primary">
         <Toolbar>
-          <IconButton>
+          <IconButton color="inherit" aria-label="menu" className={clases.menuButton}>
             <MenuIcon />
           </IconButton>
           <Typography variant="h6">
