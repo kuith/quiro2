@@ -4,7 +4,7 @@ import theme from './util/temaConfig';
 import Button from '@mui/material/Button'
 
 import ContenedorNavbar from './contenedores/contenedorNavbar';
-
+import Lista from './contenedores/contenedorLista';
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -12,6 +12,7 @@ function App() {
       <Button variant="contained" color="primary">
         Botón
       </Button>
+      <Lista />
     </ThemeProvider>
   );
 }
