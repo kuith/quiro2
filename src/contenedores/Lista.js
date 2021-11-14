@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import {
   List,
   ListItem,
@@ -34,12 +35,14 @@ function ContenedorLista() {
   return (
     <div>
       <List component='nav'>
-        <ListItem button>
-          <ListItemIcon>
-            <HomeIcon />
-          </ListItemIcon>
-          <ListItemText primary='Iinicio'/>
-        </ListItem>
+        <Link to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText primary='Iinicio'/>
+          </ListItem>
+        </Link>
 
         <ListItemButton onClick={handleClick}>
         <ListItemIcon>
@@ -51,70 +54,88 @@ function ContenedorLista() {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           
+        <Link to="servicios/quiromasaje">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <AccessibilityIcon />
             </ListItemIcon>
             <ListItemText primary="Quiromasaje" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/osteopatia">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <AccessibilityNewIcon />
             </ListItemIcon>
             <ListItemText primary="Osteopatía" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/presoterapia">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <SelfImprovementIcon />
             </ListItemIcon>
             <ListItemText primary="Presoterapia" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/deportivo">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <SportsKabaddiIcon />
             </ListItemIcon>
             <ListItemText primary="As. Deportivo" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/dietetico">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <RestaurantMenuIcon />
             </ListItemIcon>
             <ListItemText primary="As. Dietético" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/bonos">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <EuroIcon />
             </ListItemIcon>
             <ListItemText primary="Bonos" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/laser">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <StackedLineChartIcon />
             </ListItemIcon>
             <ListItemText primary="Reg. facial laser" />
           </ListItemButton>
+        </Link>
 
+        <Link to="servicios/tatuajes">
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               <NoAccountsIcon />
             </ListItemIcon>
             <ListItemText primary="Eliminación tatuajes" />
           </ListItemButton>
+        </Link>
         </List>
       </Collapse>
 
-      <ListItem button>
-        <ListItemIcon>
-            <AddLocationAltIcon />
-        </ListItemIcon>
-        <ListItemText primary='Contacto'/>
-      </ListItem>
+      <Link to="contacto">
+        <ListItem button>
+          <ListItemIcon>
+              <AddLocationAltIcon />
+          </ListItemIcon>
+          <ListItemText primary='Contacto'/>
+        </ListItem>
+      </Link>
 
       </List>
     </div>
