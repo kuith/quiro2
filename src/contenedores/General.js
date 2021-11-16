@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter} from "react-router-dom";
 
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -12,10 +11,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import Rutas from '../rutas';
 
 import Lista from './Lista';
-import Basura from '../vistas/basura';
 
 const drawerWidth = 240;
 
@@ -39,7 +36,6 @@ const General = (props) => {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <BrowserRouter>
         <CssBaseline />
         <AppBar
           position="fixed"
@@ -100,9 +96,7 @@ const General = (props) => {
           sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
         >
           <Toolbar />
-          <Rutas />
         </Box>
-    </BrowserRouter>  
   </Box>
   );
   
