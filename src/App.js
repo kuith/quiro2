@@ -11,11 +11,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <General />
-        <Routes>
-          <Route exact path="/" component={Inicio} />
-          <Route exact path="/servicios/quiromasaje" component={Quiromasaje} />
-        </Routes>
+        <General>
+          <Routes>
+            <Route exact path="/" component={Inicio} />
+            <Route exact path="/servicios/quiromasaje" component={Quiromasaje} />
+          </Routes>
+        </General>
       </BrowserRouter>
     </ThemeProvider>
   );
