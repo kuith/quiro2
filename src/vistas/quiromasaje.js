@@ -1,6 +1,6 @@
 import React from 'react'
 
-const basura = () => {
+const Quiromasaje = () => {
   return (
     <div>
       Quiromsaje
@@ -10,4 +10,4 @@ const basura = () => {
   )
 }
 
-export default basura
+export default Quiromasaje;

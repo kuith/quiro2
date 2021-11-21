@@ -23,9 +23,6 @@ function ContenedorNavbar() {
           <IconButton color="inherit" aria-label="menu" className={clases.menuButton}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6">
-            jkjk
-          </Typography>
         </Toolbar>
       </AppBar>
       {/* La siguiente linea hace que no oculte el toolbar lo que hy debajo. Usa la prpiedad mixins

@@ -11,8 +11,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 
-
 import Lista from './Lista';
+
+
 
 const drawerWidth = 240;
 
@@ -25,6 +26,7 @@ const General = (props) => {
   };
 
   const drawer = (
+
     <div>
       <Toolbar />
       <Divider />
@@ -35,6 +37,7 @@ const General = (props) => {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
+  
     <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <AppBar
@@ -62,12 +65,12 @@ const General = (props) => {
         <Box
           component="nav"
           sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-          aria-label="mailbox folders"
         >
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
           <Drawer
             container={container}
             variant="temporary"
+            
             open={mobileOpen}
             onClose={handleDrawerToggle}
             ModalProps={{

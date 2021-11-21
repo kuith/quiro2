@@ -1,11 +1,32 @@
 import React from 'react'
 
-const basura = () => {
-  return (
-    <div>
-      Now this quiet courtyard, Sunday afternoon, this girl with a random collection of European furniture, as though Deane had once intended to use the place as his home. The semiotics of the console in faded pinks and yellows. Her cheekbones flaring scarlet as Wizard’s Castle burned, forehead drenched with azure when Munich fell to the Tank War, mouth touched with hot gold as a gliding cursor struck sparks from the banks of every computer in the coffin for Armitage’s call. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull of the blowers and the amplified breathing of the fighters. Then a mist closed over the black water and the chassis of a gutted game console. A graphic representation of data abstracted from the missionaries, the train reached Case’s station. She peered at the clinic, Molly took him to the simple Chinese hollow points Shin had sold him. It was chambered for .22 long rifle, and Case would’ve preferred lead azide explosives to the Tank War, mouth touched with hot gold as a gliding cursor struck sparks from the wall between the bookcases, its distorted face sagging to the bare concrete floor.
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
-    </div>
+const basura = (props) => {
+  return (
+    <Box
+      sx={{ml: { sm: 32,  xs: 2 }, mr: {sm:2, xs: 2}}}
+    >
+      <Typography paragraph>
+          gf f fg fg fg fg Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
+          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
+          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
+          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
+          Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
+          nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
+          leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
+          feugiat vivamus at augue. At augue eget arcu dictum varius duis at
+          consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
+          sapien faucibus et molestie ac.
+        </Typography>
+        <Typography paragraph>
+          {props.cosa}
+        </Typography>
+
+    </Box>
   )
 }
 
