@@ -4,7 +4,7 @@ import {Route, Routes } from "react-router-dom";
 
 import General from './contenedores/General';
 
-import Inicio from './vistas/basura';
+import Inicio from './vistas/inicio';
 import Quiromasaje from './vistas/quiromasaje';
 
 function App() {
