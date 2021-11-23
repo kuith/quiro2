@@ -12,7 +12,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <General/>
         <Routes>
-          <Route path="/" element={ <Inicio  cosa="cosa"/>} />
+          <Route excat path="/" element={ <Inicio xsImage = "Pequeño" mdImage="Grande"/>} />
           <Route path="/servicios/quiromasaje" element={ <Quiromasaje />} />
         </Routes>
     </ThemeProvider>
