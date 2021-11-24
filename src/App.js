@@ -7,12 +7,15 @@ import General from './contenedores/General';
 import Inicio from './vistas/inicio';
 import Quiromasaje from './vistas/quiromasaje';
 
+import ImagenInicioMd from './util/imagenes/imagenIntroblanca.png';
+import ImagenInicioXs from './util/imagenes/logprincipal_trans_2.png';
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <General/>
         <Routes>
-          <Route excat path="/" element={ <Inicio xsImage = "Pequeño" mdImage="Grande"/>} />
+          <Route excat path="/" element={ <Inicio xsImage = {ImagenInicioXs} mdImage={ImagenInicioMd}/>} />
           <Route path="/servicios/quiromasaje" element={ <Quiromasaje />} />
         </Routes>
     </ThemeProvider>
